@@ -1,1 +1,23 @@
-<p>chat works!</p>
+<mat-card class="main-card">
+    <mat-card-content>
+        <mat-card class="prompt-card">
+            <mat-card-content>
+                <div class="prompt-content">
+                    <div style="height: 80vh;width:50vw;">
+                    </div>
+                    <div>
+                        <!-- <div class="chat-input-container">
+                            <input type="text" [(ngModel)]="message" class="chat-input" placeholder="Enter a Prompt here" (keyup.enter)="sendMessage()">
+                            <button class="chat-send-button" (click)="sendMessage()">Send</button>
+                          </div> -->
+                          <div class="gemini-prompt-container">
+                            <mat-icon class="gemini-icon">search</mat-icon> <input type="text" [(ngModel)]="message" class="gemini-prompt-input" placeholder="Ask me anything...">
+                            <button mat-raised-button class="gemini-send-button" (click)="sendMessage()">Send</button>
+                          </div>
+                          
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-card-content>
+</mat-card>
